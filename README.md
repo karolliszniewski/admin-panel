@@ -51,3 +51,15 @@ Files are compiled into bundle.js and styles.css separately. This separation is 
   ```bash
   npm install
    ```
+
+### 8. Cloning the Repository and Setup:
+
+To clone this repository and set up the project, execute the following commands in sequence:
+
+```bash
+git clone git@github.com:karolliszniewski/webpack-ts-scss-template.git
+cd webpack-ts-scss-template
+npm install
+npm run build
+npm run start
+```
