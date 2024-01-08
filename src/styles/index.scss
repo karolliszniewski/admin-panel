@@ -1,0 +1,26 @@
+//colors
+$white: #FCFCFC;
+$lightGrey: #E2E2E2;
+$Grey:#737385;
+$DarkGrey: #333333;
+$LightBlue: #4386FD;
+$DarkBlue:#121330;
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+
+body{
+    background:$white;
+    
+    .navbar {
+        display:flex;
+        width:100%;
+        justify-content:space-between;
+        padding:0 2rem;
+        
+        background:$DarkBlue
+    }
+}
