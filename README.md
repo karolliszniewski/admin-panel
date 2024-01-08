@@ -1,22 +1,28 @@
-1. Required Dependencies:
-   Node: v20.10.0
-   npm: 10.2.3
-   tsc (TypeScript Compiler): Version 5.3.3
+| No. | Required Dependencies | Version   |
+|---- |----------------------- |-----------|
+| 1.  | Node                   | v20.10.0  |
+| 2.  | npm                    | 10.2.3    |
+| 3.  | tsc                    | 5.3.3     |
 
-2. Running the Server on Port 3000:
+
+
+### 1. Running the Server on Port 3000
 
 To start the development server with live reload, use the following command:
 
+```bash
 npm run start
+```
+### 2. Compiling Files to the 'dist' Folder:
+To compile the project in production mode and generate the /dist folder, use:
+```bash
+npm run build
+```
+### 3. Separation of JavaScript and CSS:
+Files are compiled into bundle.js and styles.css separately. This separation is achieved with the help of the MiniCssExtractPlugin plugin, even though CSS is declared and handled in TypeScript files in the project.
 
-3. Compiling Files to the 'dist' Folder:
-   To compile the project in production mode and generate the /dist folder, use:
-   npm run build
-
-4. Separation of JavaScript and CSS:
-   Files are compiled into bundle.js and styles.css separately. This separation is achieved with the help of the MiniCssExtractPlugin plugin, even though CSS is declared and handled in TypeScript files in the project.
-
-Project Structure:
+### 5. Project Structure:
+```
 /src
 ├── index.ts
 ├── styles.scss
@@ -25,14 +31,23 @@ Project Structure:
 /dist
 ├── bundle.js
 └── styles.css
+└── index.html
+```
 
-6. Additional Information:
-   The configuration supports TypeScript, SCSS, CSS, and HTML files.
-   The MiniCssExtractPlugin plugin extracts styles into the styles.css file.
-   The CopyPlugin plugin copies the index.html file from the /src folder to the /dist folder.
-   Only the contents of the /src folder are required to build the project.
-   Ensure that you have the required dependencies installed by running:
-   npm install
+### 6. Additional Information:
+```markdown
 
-or for yarn:
-yarn
+
+| Information                                         | Description                                                      |
+|-----------------------------------------------------|------------------------------------------------------------------|
+| Supported File Types                                | TypeScript, SCSS, CSS, HTML                                      |
+| MiniCssExtractPlugin Extraction                     | Styles are extracted into the `styles.css` file.                 |
+| CopyPlugin Copying                                  | The `index.html` file is copied from `/src` to `/dist` folder.   |
+| Project Building Requirements                       | Only the contents of the `/src` folder are required.             |
+```
+
+
+### 7. Ensure that you have the required dependencies installed by running:
+  ```bash
+  npm install
+   ```
