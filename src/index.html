@@ -1,17 +1,669 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document2</title>
-    <link rel="stylesheet" href="styles.css" />
+    <!-- CDN -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Search - Upgraded2</title>
   </head>
   <body>
-    hello
-    <script src="bundle.js"></script>
+    <div class="menu active">
+      <div class="menu__top">menu</div>
+      <div class="menu__profile">
+        <img src="inc/media/avatar.jpg" alt="" srcset="" />
+        <div class="menu__profile__user">Stefan bot<span>alarm</span></div>
+      </div>
+
+      <ul class="pages">
+        <li>
+          <div class="pages__tab">
+            <span class="pages__icon material-symbols-outlined">
+              home_repair_service </span
+            >Tools
+          </div>
+          <div>
+            <ul>
+              <li class="pages__item">
+                <a class="pages__link" href="#"
+                  ><span class="pages__arrows material-symbols-outlined">
+                    trending_flat
+                  </span>
+                  Link</a
+                >
+              </li>
+              <li class="pages__item">
+                <a class="pages__link" href="#"
+                  ><span class="pages__arrows material-symbols-outlined">
+                    trending_flat
+                  </span>
+                  Link</a
+                >
+              </li>
+
+              <li class="pages__item">
+                <a class="pages__link" href="#"
+                  ><span class="pages__arrows material-symbols-outlined">
+                    trending_flat
+                  </span>
+                  Link</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container active">
+      <header class="navigation">
+        <nav class="navigation__left">
+          <span id="menu-toggle" class="material-symbols-outlined"> menu </span>
+          <form class="search">
+            <div class="search__container"></div>
+            <input type="text" />
+
+            <button class="material-symbols-outlined" aria-label="search">
+              search
+            </button>
+          </form>
+        </nav>
+        <nav class="navigation__right">
+          <span class="material-symbols-outlined"> notifications </span>
+          <span class="material-symbols-outlined"> chat_bubble </span>
+          <span>
+            <div class="navigation__right__country">
+              <img
+                class="navigation__right__country__svg"
+                src="inc/media/gb-flag.svg"
+                alt=""
+                srcset=""
+              /></div
+          ></span>
+          <span
+            ><img
+              class="navigation__right__avatar"
+              src="inc/media/avatar.jpg"
+              alt=""
+              srcset=""
+          /></span>
+        </nav>
+      </header>
+
+      <!--preview start-->
+      <div class="preview">
+        <!-- data start -->
+        <div class="preview__data">
+          <div class="preview__data__header">
+            Lookfantasitc
+            <span class="preview__data__header__icon">
+              <span class="material-symbols-outlined"> sync_alt </span></span
+            >
+          </div>
+
+          <div class="preview__data__info">6:51:53</div>
+          <div class="preview__data__footer">
+            <span class="preview__data__footer__status wrong">wrong</span>Delay
+            status
+          </div>
+        </div>
+        <!-- data end -->
+        <!-- data start -->
+        <div class="preview__data">
+          <div class="preview__data__header">
+            All
+            <span class="preview__data__header__icon">
+              <span class="material-symbols-outlined"> sync_alt </span></span
+            >
+          </div>
+
+          <div class="preview__data__info">6:51:53</div>
+          <div class="preview__data__footer">
+            <span class="preview__data__footer__status">ok</span>Delay status
+          </div>
+        </div>
+        <!-- data end -->
+        <!-- data start -->
+        <div class="preview__data">
+          <div class="preview__data__header">
+            amazon
+            <span class="preview__data__header__icon">
+              <span class="material-symbols-outlined"> sync_alt </span></span
+            >
+          </div>
+
+          <div class="preview__data__info">6:51:53</div>
+          <div class="preview__data__footer">
+            <span class="preview__data__footer__status">ok</span>Delay status
+          </div>
+        </div>
+        <!-- data end -->
+        <!-- data start -->
+        <div class="preview__data">
+          <div class="preview__data__header">
+            CRON
+            <span class="preview__data__header__icon">
+              <span class="material-symbols-outlined"> sync_alt </span></span
+            >
+          </div>
+
+          <div class="preview__data__info">6:51:53</div>
+          <div class="preview__data__footer">
+            <span class="preview__data__footer__status">ok</span>Delay status
+          </div>
+        </div>
+        <!-- data end -->
+      </div>
+
+      <!-- to do fix this all-->
+      <div class="panel">
+        <div class="panel__header">
+          <span class="panel__shop">sprzedazwuk@gmail.com</span
+          ><span
+            ><a id="customize" class="panel__button">Customize Columns</a></span
+          >
+        </div>
+
+        <div class="customize__options">
+          <section class="customize__section">
+            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
+            <label for="link">Link: </label><input id="link" type="checkbox" />
+            <label for="link2">Link2: </label
+            ><input id="link2" type="checkbox" />
+          </section>
+          <section class="customize__section">
+            <label for="mark">Id: </label
+            ><input class="checkbox" id="mark" type="checkbox" />
+            <label for="mark">Price: </label
+            ><input id="mark" type="checkbox" />
+            <label for="mark">Profit: 1.5</label
+            ><input id="mark" type="checkbox" />
+          </section>
+          <section class="customize__section">
+            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
+            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
+            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
+          </section>
+          <section class="customize__section">
+            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
+            <label for="mark">Link: </label><input id="mark" type="checkbox" />
+            <label for="mark">Link2: </label><input id="mark" type="checkbox" />
+          </section>
+          <section class="customize__section">
+            <label for="mark">Id: </label><input id="mark" type="checkbox" />
+            <label for="mark">Price: </label
+            ><input id="mark" type="checkbox" />
+            <label for="mark">Profit: 1.5</label
+            ><input id="mark" type="checkbox" />
+          </section>
+          <section class="customize__section">
+            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
+            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
+            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
+          </section>
+          <section class="customize__section">
+            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
+            <label for="mark">Link: </label><input id="mark" type="checkbox" />
+            <label for="mark">Link2: </label><input id="mark" type="checkbox" />
+          </section>
+          <section class="customize__section">
+            <label for="mark">Id: </label><input id="mark" type="checkbox" />
+            <label for="mark">Price: </label
+            ><input id="mark" type="checkbox" />
+            <label for="mark">Profit: 1.5</label
+            ><input id="mark" type="checkbox" />
+          </section>
+          <section class="customize__section">
+            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
+            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
+            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
+          </section>
+        </div>
+      </div>
+
+      <!-- to do here ends-->
+      <!--preview end-->
+      <div class="table" id="table">
+        <table cellspacing="0">
+          <thead>
+            <tr>
+              <th>Mark</th>
+              <th>Link</th>
+              <th>Link</th>
+              <th>Id</th>
+              <th>Price</th>
+              <th>Profit: 1.5</th>
+              <th>Profit: 1</th>
+              <th>Action</th>
+              <th>Ebay ID</th>
+              <th>Action</th>
+              <th>Profit: 1.5</th>
+              <th>Profit: 1</th>
+              <th>Action</th>
+              <th>Ebay ID</th>
+              <th>Action</th>
+              <th>Profit: 1.5</th>
+              <th>Profit: 1</th>
+              <th>Action</th>
+              <th>Ebay ID</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <!-- table row 2-->
+          <tbody>
+            <tr>
+              <td><input class="container__checkbox" type="checkbox" /></td>
+              <td><a class="container__btn-ebay">Ebay</a></td>
+              <td>
+                <a class="container__btn-retailer">Retailer</a>
+              </td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td>
+                <a class="container__btn-yes">yes</a>
+              </td>
+              <td>
+                <input class="ebayid" type="text" value="" />
+              </td>
+              <td>
+                <a class="container__btn-no">no</a>
+              </td>
+            </tr>
+            <!-- table row 2-->
+            <tr>
+              <td><input class="container__checkbox" type="checkbox" /></td>
+              <td><a class="container__btn-ebay">Ebay</a></td>
+              <td>
+                <a class="container__btn-retailer">Retailer</a>
+              </td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td>
+                <a class="container__btn-yes clicked">yes</a>
+              </td>
+              <td>
+                <input class="ebayid" type="text" value="" />
+              </td>
+              <td>
+                <a class="container__btn-no">no</a>
+              </td>
+            </tr>
+            <!-- table row 2-->
+            <tr>
+              <td><input class="container__checkbox" type="checkbox" /></td>
+              <td><a class="container__btn-ebay">Ebay</a></td>
+              <td>
+                <a class="container__btn-retailer">Retailer</a>
+              </td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td>
+                <a class="container__btn-yes">yes</a>
+              </td>
+              <td>
+                <input class="ebayid" type="text" value="" />
+              </td>
+              <td>
+                <a class="container__btn-no">no</a>
+              </td>
+            </tr>
+            <!-- table row 2-->
+            <tr>
+              <td><input class="container__checkbox" type="checkbox" /></td>
+              <td><a class="container__btn-ebay">Ebay</a></td>
+              <td>
+                <a class="container__btn-retailer">Retailer</a>
+              </td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td>
+                <a class="container__btn-yes">yes</a>
+              </td>
+              <td>
+                <input class="ebayid" type="text" value="" />
+              </td>
+              <td>
+                <a class="container__btn-no">no</a>
+              </td>
+            </tr>
+            <!-- table row 2-->
+            <tr>
+              <td><input class="container__checkbox" type="checkbox" /></td>
+              <td><a class="container__btn-ebay">Ebay</a></td>
+              <td>
+                <a class="container__btn-retailer">Retailer</a>
+              </td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td>
+                <a class="container__btn-yes">yes</a>
+              </td>
+              <td>
+                <input class="ebayid" type="text" value="" />
+              </td>
+              <td>
+                <a class="container__btn-no">no</a>
+              </td>
+            </tr>
+            <!-- table row 2-->
+            <tr>
+              <td><input class="container__checkbox" type="checkbox" /></td>
+              <td><a class="container__btn-ebay">Ebay</a></td>
+              <td>
+                <a class="container__btn-retailer">Retailer</a>
+              </td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td>
+                <a class="container__btn-yes">yes</a>
+              </td>
+              <td>
+                <input class="ebayid" type="text" value="" />
+              </td>
+              <td>
+                <a class="container__btn-no">no</a>
+              </td>
+            </tr>
+            <!-- table row 2-->
+            <tr>
+              <td><input class="container__checkbox" type="checkbox" /></td>
+              <td><a class="container__btn-ebay">Ebay</a></td>
+              <td>
+                <a class="container__btn-retailer">Retailer</a>
+              </td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td>
+                <a class="container__btn-yes">yes</a>
+              </td>
+              <td>
+                <input class="ebayid" type="text" value="" />
+              </td>
+              <td>
+                <a class="container__btn-no">no</a>
+              </td>
+            </tr>
+            <!-- table row 2-->
+            <tr>
+              <td><input class="container__checkbox" type="checkbox" /></td>
+              <td><a class="container__btn-ebay">Ebay</a></td>
+              <td>
+                <a class="container__btn-retailer">Retailer</a>
+              </td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td>
+                <a class="container__btn-yes">yes</a>
+              </td>
+              <td>
+                <input class="ebayid" type="text" value="" />
+              </td>
+              <td>
+                <a class="container__btn-no">no</a>
+              </td>
+            </tr>
+            <!-- table row 2-->
+            <tr>
+              <td><input class="container__checkbox" type="checkbox" /></td>
+              <td><a class="container__btn-ebay">Ebay</a></td>
+              <td>
+                <a class="container__btn-retailer">Retailer</a>
+              </td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td>
+                <a class="container__btn-yes">yes</a>
+              </td>
+              <td>
+                <input class="ebayid" type="text" value="" />
+              </td>
+              <td>
+                <a class="container__btn-no">no</a>
+              </td>
+            </tr>
+            <!-- table row 2-->
+            <tr>
+              <td><input class="container__checkbox" type="checkbox" /></td>
+              <td><a class="container__btn-ebay">Ebay</a></td>
+              <td>
+                <a class="container__btn-retailer">Retailer</a>
+              </td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td>
+                <a class="container__btn-yes">yes</a>
+              </td>
+              <td>
+                <input class="ebayid" type="text" value="" />
+              </td>
+              <td>
+                <a class="container__btn-no">no</a>
+              </td>
+            </tr>
+            <!-- table row 2-->
+            <tr>
+              <td><input class="container__checkbox" type="checkbox" /></td>
+              <td><a class="container__btn-ebay">Ebay</a></td>
+              <td>
+                <a class="container__btn-retailer">Retailer</a>
+              </td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td>
+                <a class="container__btn-yes">yes</a>
+              </td>
+              <td>
+                <input class="ebayid" type="text" value="" />
+              </td>
+              <td>
+                <a class="container__btn-no">no</a>
+              </td>
+            </tr>
+            <!-- table row 2-->
+            <tr>
+              <td><input class="container__checkbox" type="checkbox" /></td>
+              <td><a class="container__btn-ebay">Ebay</a></td>
+              <td>
+                <a class="container__btn-retailer">Retailer</a>
+              </td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td>
+                <a class="container__btn-yes">yes</a>
+              </td>
+              <td>
+                <input class="ebayid" type="text" value="" />
+              </td>
+              <td>
+                <a class="container__btn-no">no</a>
+              </td>
+            </tr>
+            <!-- table row 2-->
+            <tr>
+              <td><input class="container__checkbox" type="checkbox" /></td>
+              <td><a class="container__btn-ebay">Ebay</a></td>
+              <td>
+                <a class="container__btn-retailer">Retailer</a>
+              </td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td><input type="text" value="2554" /></td>
+              <td>
+                <a class="container__btn-yes">yes</a>
+              </td>
+              <td>
+                <input class="ebayid" type="text" value="" />
+              </td>
+              <td>
+                <a class="container__btn-no">no</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <footer>
+      <script src="bundle.js"></script>
+    </footer>
   </body>
 </html>
