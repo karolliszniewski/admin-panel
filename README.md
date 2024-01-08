@@ -40,3 +40,11 @@ npm install
 npm run build
 npm run start
 ```
+
+### v1.0 Project Successfully Migrated to the New Webpack Setup
+
+After the transition, I will continue to design and code for this project.
+
+![Preview Image](https://github.com/karolliszniewski/admin-panel/assets/105976690/5646b3fb-6daa-4e4d-85a7-7c60402e45b6)
+
+_Preview of the current project phase for version 1.0_
