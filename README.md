@@ -62,4 +62,6 @@ cd webpack-ts-scss-template
 npm install
 npm run build
 npm run start
+git remote remove origin
+git remote add new_repository_link
 ```
