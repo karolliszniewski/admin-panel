@@ -1,4 +1,7 @@
 import './styles/index.scss'
+import './utils/jquery.ts'
+
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
     class Table {
       private static _instance: Table | null = null;
   
-      columns: string[] = ['Mark', 'Link', 'Link2', 'Id', 'Price', 'Profit: 1.5', 'Profit: 1', 'Action1', 'Action2'];
-      tableContainer: HTMLElement | null = document.getElementById("table");
+      columns: string[] = ['Select', 'Link', 'Link2', 'Id', 'Price', 'Profit: 1.5', 'Profit: 1', 'Action1', 'Action2'];
+      tableContainer: HTMLElement = document.getElementById("table");
   
       private constructor() {
         // private constructor to prevent instantiation
@@ -33,9 +36,61 @@ document.addEventListener('DOMContentLoaded', () => {
         return Table._instance;
       }
   
-      createTable() {
-        // ... (bez zmian)
+      createTable(): void {
+        // Usuń istniejącą tabelę
+        const existingTable = this.tableContainer.querySelector("table");
+        if (existingTable) {
+          this.tableContainer.removeChild(existingTable);
+        }
+      
+        // Utwórz nową tabelę
+        const newTable = document.createElement("table");
+        newTable.setAttribute('cellspacing', '0');
+      
+        // Utwórz wiersz nagłówka
+        const headerRow = document.createElement("tr");
+        this.columns.forEach(columnName => {
+          const th = document.createElement("th");
+          th.textContent = columnName;
+          headerRow.appendChild(th);
+        });
+        newTable.appendChild(headerRow);
+      
+        // Utwórz przykładowe dane
+        const numRows = 5;
+        for (let i = 0; i < numRows; i++) {
+          const row = document.createElement("tr");
+          let first = true;
+          this.columns.forEach(columnName => {
+            // 
+            if (first === true) {
+              first = false;
+              const td = document.createElement("td");
+              // checkbox
+              td.innerHTML = `
+              <div class="container__element">
+              <div class="container__checkbox">
+                <input id="marktable${i}" type="checkbox" />
+                <label for="marktable${i}"> </label>
+              </div>
+            </div>
+            `;
+              row.appendChild(td);
+            } else {
+              const td = document.createElement("td");
+              // Tutaj możesz dostosować generowanie danych
+              td.textContent = `${columnName} ${i}`;
+              row.appendChild(td);
+            }
+          });
+          newTable.appendChild(row);
+        }
+      
+        // Dodaj nową tabelę do kontenera
+        this.tableContainer.appendChild(newTable);
       }
+      
+  
   
       updateColumns() {
         this.columns = ['Mark', 'Link', 'Link2', 'Id', 'Price', 'Profit: 1.5', 'Profit: 1', 'Action1'];

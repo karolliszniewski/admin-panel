@@ -13,7 +13,7 @@
     <title>Search - Upgraded2</title>
   </head>
   <body>
-    <div class="menu active">
+    <div class="menu">
       <div class="menu__top">menu</div>
       <div class="menu__profile">
         <img src="inc/media/avatar.jpg" alt="" srcset="" />
@@ -60,7 +60,7 @@
       </ul>
     </div>
 
-    <div class="container active">
+    <div class="container">
       <header class="navigation">
         <nav class="navigation__left">
           <span id="menu-toggle" class="material-symbols-outlined"> menu </span>
@@ -171,57 +171,105 @@
 
         <div class="customize__options">
           <section class="customize__section">
-            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
-            <label for="link">Link: </label><input id="link" type="checkbox" />
-            <label for="link2">Link2: </label
-            ><input id="link2" type="checkbox" />
+            <div class="customize__element">
+              <label for="select">Select</label>
+              <div class="customize__checkbox">
+                <input id="select" type="checkbox" />
+                <label for="select"> </label>
+              </div>
+            </div>
+
+            <div class="customize__element">
+              <label for="link">Link</label>
+              <div class="customize__checkbox">
+                <input id="link" type="checkbox" />
+                <label for="link"> </label>
+              </div>
+            </div>
+
+            <div class="customize__element">
+              <label for="link2">Link2</label>
+              <div class="customize__checkbox">
+                <input id="link2" type="checkbox" />
+                <label for="link2"> </label>
+              </div>
+            </div>
+
+            <div class="customize__element">
+              <label for="idCheckbox">Id</label>
+              <div class="customize__checkbox">
+                <input id="idCheckbox" type="checkbox" />
+                <label for="idCheckbox"> </label>
+              </div>
+            </div>
           </section>
+
           <section class="customize__section">
-            <label for="mark">Id: </label
-            ><input class="checkbox" id="mark" type="checkbox" />
-            <label for="mark">Price: </label
-            ><input id="mark" type="checkbox" />
-            <label for="mark">Profit: 1.5</label
-            ><input id="mark" type="checkbox" />
+            <div class="customize__element">
+              <label for="price">Price</label>
+              <div class="customize__checkbox">
+                <input id="price" type="checkbox" />
+                <label for="price"> </label>
+              </div>
+            </div>
+
+            <div class="customize__element">
+              <label for="profit5">Profit5</label>
+              <div class="customize__checkbox">
+                <input id="profit5" type="checkbox" />
+                <label for="profit5"> </label>
+              </div>
+            </div>
+
+            <div class="customize__element">
+              <label for="profit1">Profit1</label>
+              <div class="customize__checkbox">
+                <input id="profit1" type="checkbox" />
+                <label for="profit1"> </label>
+              </div>
+            </div>
+
+            <div class="customize__element">
+              <label for="action1">Action1</label>
+              <div class="customize__checkbox">
+                <input id="action1" type="checkbox" />
+                <label for="action1"> </label>
+              </div>
+            </div>
           </section>
+
           <section class="customize__section">
-            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
-            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
-            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
-          </section>
-          <section class="customize__section">
-            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
-            <label for="mark">Link: </label><input id="mark" type="checkbox" />
-            <label for="mark">Link2: </label><input id="mark" type="checkbox" />
-          </section>
-          <section class="customize__section">
-            <label for="mark">Id: </label><input id="mark" type="checkbox" />
-            <label for="mark">Price: </label
-            ><input id="mark" type="checkbox" />
-            <label for="mark">Profit: 1.5</label
-            ><input id="mark" type="checkbox" />
-          </section>
-          <section class="customize__section">
-            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
-            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
-            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
-          </section>
-          <section class="customize__section">
-            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
-            <label for="mark">Link: </label><input id="mark" type="checkbox" />
-            <label for="mark">Link2: </label><input id="mark" type="checkbox" />
-          </section>
-          <section class="customize__section">
-            <label for="mark">Id: </label><input id="mark" type="checkbox" />
-            <label for="mark">Price: </label
-            ><input id="mark" type="checkbox" />
-            <label for="mark">Profit: 1.5</label
-            ><input id="mark" type="checkbox" />
-          </section>
-          <section class="customize__section">
-            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
-            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
-            <label for="mark">Mark: </label><input id="mark" type="checkbox" />
+            <div class="customize__element">
+              <label for="mark">Select</label>
+              <div class="customize__checkbox">
+                <input id="mark" type="checkbox" />
+                <label for="mark"> </label>
+              </div>
+            </div>
+
+            <div class="customize__element">
+              <label for="mark">Select</label>
+              <div class="customize__checkbox">
+                <input id="mark" type="checkbox" />
+                <label for="mark"> </label>
+              </div>
+            </div>
+
+            <div class="customize__element">
+              <label for="mark2">Link</label>
+              <div class="customize__checkbox">
+                <input id="mark2" type="checkbox" />
+                <label for="mark2"> </label>
+              </div>
+            </div>
+
+            <div class="customize__element">
+              <label for="mark2">Link</label>
+              <div class="customize__checkbox">
+                <input id="mark2" type="checkbox" />
+                <label for="mark2"> </label>
+              </div>
+            </div>
           </section>
         </div>
       </div>
@@ -257,8 +305,12 @@
           <!-- table row 2-->
           <tbody>
             <tr>
-              <td><input class="container__checkbox" type="checkbox" /></td>
-              <td><a class="container__btn-ebay">Ebay</a></td>
+              <td>
+                <input class="container__checkbox" type="checkbox" />
+              </td>
+              <td>
+                <a class="container__btn-ebay">Ebay</a>
+              </td>
               <td>
                 <a class="container__btn-retailer">Retailer</a>
               </td>
@@ -663,6 +715,11 @@
       </div>
     </div>
     <footer>
+      <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"
+      ></script>
       <script src="bundle.js"></script>
     </footer>
   </body>

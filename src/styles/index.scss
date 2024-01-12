@@ -7,7 +7,7 @@ $white:rgb(255,248,231);
 $LittleGrey:rgb(200, 200, 200);
 $buttonOne: #005B41;
 $buttonTwo:#27374D;
-$buttonThree:rgb(59,125,221);
+$buttonThree: rgb(81,76,182);
 $body:rgb(34,43,69);
 $container:rgb(21,26,48);
 $tr: rgb(34,43,69);
@@ -128,6 +128,7 @@ body{
 
         }
 
+
         &__section{
             color:$white;
             margin:auto;
@@ -135,11 +136,81 @@ body{
             justify-content:center;
             align-items:center;
 
-            input{
-                margin-right:2rem;
-                margin-left:0.3rem;
-            }
+
+            flex-wrap:wrap;
+
+            
+
+  
+
+
         }
+
+        &__element{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            position:relative;
+          // background:red;
+            margin:.5rem 1rem;
+
+            label{
+                cursor: pointer;
+            }
+
+
+        }
+
+
+        &__checkbox{
+         
+            position: relative;
+            cursor: pointer;
+
+            input{
+                display: none; 
+
+                &:checked{
+                    + label{
+                        background-color:$purpleLight;
+                        border-color:$purpleLight;
+
+                        &:after{
+                            display: block;
+                        }
+                    }
+                }
+
+
+            }
+            label {
+                
+                border-radius:5px;
+                transition:background-color .3s ease-out;
+                cursor: pointer;
+                position: absolute;
+                top: -11px;
+                left: 5px;
+                width: 20px; 
+                height: 20px; 
+                background-color:$body;
+                border: 1px solid $purpleLight; 
+
+                &:after{
+                    content: '\2713'; /* Dodaj symbol ✓ (zaznaczenie) */
+                    font-size: 16px;
+                    color: #fff; /* Kolor symbolu zaznaczenia */
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: none;
+                    
+                }
+              }
+            
+        }
+
     }
     
 .menu{
@@ -603,8 +674,69 @@ body{
 
         // }
 
+        &__element{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            position:relative;
+          // background:red;
+            
+
+            label{
+                cursor: pointer;
+            }
+
+
+        }
+
+
         &__checkbox{
-// TODO : make custom checbox
+         
+            position: relative;
+            cursor: pointer;
+
+            input{
+                display: none; 
+
+                &:checked{
+                    + label{
+                        background-color:$purpleLight;
+                        border-color:$purpleLight;
+
+                        &:after{
+                            display: block;
+                        }
+                    }
+                }
+
+
+            }
+            label {
+                
+                border-radius:5px;
+                transition:background-color .3s ease-out;
+                cursor: pointer;
+                position: absolute;
+                top: -11px;
+                left: -10px;
+                width: 20px; 
+                height: 20px; 
+                background-color:$body;
+                border: 1px solid $purpleLight; 
+
+                &:after{
+                    content: '\2713'; /* Dodaj symbol ✓ (zaznaczenie) */
+                    font-size: 16px;
+                    color: #fff; /* Kolor symbolu zaznaczenia */
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: none;
+                    
+                }
+              }
+            
         }
 
         .table{
@@ -711,93 +843,3 @@ body{
 } // body
 
 
-
-
-
-// checbox
-.cbx {
-    position: relative;
-    display: block;
-    float: left;
-    width: 18px;
-    height: 18px;
-    border-radius: 4px;
-    background-color: #606062;
-    background-image: linear-gradient(#474749, #606062);
-    box-shadow: inset 0 1px 1px rgba(255,255,255,0.15), inset 0 -1px 1px rgba(0,0,0,0.15);
-    transition: all 0.15s ease;
-  }
-  .cbx svg {
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: #fff;
-    stroke-width: 2;
-    stroke-dasharray: 17;
-    stroke-dashoffset: 17;
-    transform: translate3d(0, 0, 0);
-  }
-  .rdo {
-    position: relative;
-    display: block;
-    float: left;
-    width: 18px;
-    height: 18px;
-    border-radius: 10px;
-    background-color: #606062;
-    background-image: linear-gradient(#474749, #606062);
-    box-shadow: inset 0 1px 1px rgba(255,255,255,0.15), inset 0 -1px 1px rgba(0,0,0,0.15);
-    transition: all 0.15s ease;
-  }
-  .rdo:after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 6px;
-    left: 6px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #fff;
-    opacity: 0;
-    transform: scale(0);
-  }
-  .cbx + span,
-  .rdo + span {
-    float: left;
-    margin-left: 6px;
-  }
-  .forms {
-    margin: auto;
-    user-select: none;
-  }
-  .forms label {
-    display: inline-block;
-    margin: 10px;
-    cursor: pointer;
-  }
-  .forms input[type="checkbox"],
-  .forms input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-  }
-  .forms input[type="radio"]:checked + .rdo {
-    background-color: #606062;
-    background-image: linear-gradient(#255cd2, #1d52c1);
-  }
-  .forms input[type="radio"]:checked + .rdo:after {
-    opacity: 1;
-    transform: scale(1);
-    transition: all 0.15s ease;
-  }
-  .forms input[type="checkbox"]:checked + .cbx {
-    background-color: #606062;
-    background-image: linear-gradient(#255cd2, #1d52c1);
-  }
-  .forms input[type="checkbox"]:checked + .cbx svg {
-    stroke-dashoffset: 0;
-    transition: all 0.15s ease;
-  }

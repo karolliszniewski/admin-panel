@@ -48,3 +48,7 @@ After the transition, I will continue to design and code for this project.
 ![Preview Image](https://github.com/karolliszniewski/admin-panel/assets/105976690/5646b3fb-6daa-4e4d-85a7-7c60402e45b6)
 
 _Preview of the current project phase for version 1.0_
+
+### v1.1 Custom Checkboxes - Active Elements Now in Purple Color
+
+![Demo](https://github.com/karolliszniewski/admin-panel/assets/105976690/3b5527ef-d8fe-4c93-80a7-eb9735fef638)
